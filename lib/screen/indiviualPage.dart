@@ -27,6 +27,7 @@ class _IndividualPageState extends State<IndividualPage> {
   ScrollController _scrollController = ScrollController();
 
   void connect() async {
+    // https://morning-shore-23134.herokuapp.com/check
     socket = await IO.io("http://192.168.1.30:5500", <String, dynamic>{
       "transports": ["websocket"],
       "autoConnect": false,
