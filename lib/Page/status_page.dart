@@ -50,9 +50,9 @@ class _StatusPageState extends State<StatusPage> {
             ),
             HeadOwnStatus(),
             Buildlabel(context,"Recent Update"),
-            OthersStatus(name: "Sarawut 616",time: "01:13",imgpath: "assets/profile1.jpg",),
-            OthersStatus(name: "Sarawut 838",time: "02:23",imgpath: "assets/profile2.jpg",),
-            OthersStatus(name: "Sarawut 777",time: "03:33",imgpath: "assets/profile3.jpg",),
+            OthersStatus(name: "Sarawut 616",time: "01:13",imgpath: "assets/profile1.jpg",isSeen:true,statusNum: 1,),
+            OthersStatus(name: "Sarawut 838",time: "02:23",imgpath: "assets/profile2.jpg",isSeen:false,statusNum: 3,),
+            OthersStatus(name: "Sarawut 777",time: "03:33",imgpath: "assets/profile3.jpg",isSeen:true,statusNum: 10,),
             SizedBox(
               height: 10,
             ),
