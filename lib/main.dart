@@ -1,4 +1,5 @@
 import 'package:camera/camera.dart';
+import 'package:chatapp/LandingScreen/LandingScreen.dart';
 import 'package:chatapp/screen/camera_screen.dart';
 import 'package:chatapp/screen/home_scren.dart';
 import 'package:chatapp/screen/login_screen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "OpenSans"),
-        home: LoginScreen());
+        home: LandingScreen());
   }
 }
 
