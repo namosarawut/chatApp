@@ -21,7 +21,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "OpenSans"),
-        home: LandingScreen());
+        // home: LandingScreen()
+        home: LoginScreen()
+
+    );
   }
 }
 

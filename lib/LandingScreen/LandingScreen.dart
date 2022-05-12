@@ -1,3 +1,4 @@
+import 'package:chatapp/LandingScreen/login_page.dart';
 import 'package:flutter/material.dart';
 
 class LandingScreen extends StatefulWidget {
@@ -12,8 +13,14 @@ class _LandingScreenState extends State<LandingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
+        height: MediaQuery
+            .of(context)
+            .size
+            .height,
+        width: MediaQuery
+            .of(context)
+            .size
+            .width,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -28,16 +35,22 @@ class _LandingScreenState extends State<LandingScreen> {
                     fontWeight: FontWeight.w600),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height / 8,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 8,
               ),
               Image.asset(
                 "assets/bg.png",
-                color: Colors.greenAccent[700],
+                color: Colors.indigo,
                 height: 340,
                 width: 340,
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height / 7.5,
+                height: MediaQuery
+                    .of(context)
+                    .size
+                    .height / 7.5,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
@@ -54,7 +67,7 @@ class _LandingScreenState extends State<LandingScreen> {
                             style: TextStyle(color: Colors.grey[600])),
                         TextSpan(
                             text:
-                                " MyChatApp Terms of Service and Privacy Policy",
+                            " MyChatApp Terms of Service and Privacy Policy",
                             style: TextStyle(color: Colors.cyan))
                       ]),
                 ),
@@ -63,11 +76,16 @@ class _LandingScreenState extends State<LandingScreen> {
                 height: 20,
               ),
               InkWell(
-                onTap: (){
-
+                onTap: () {
+                  Navigator.pushAndRemoveUntil(context,
+                      MaterialPageRoute(builder: (builder) => LoginPage()), (
+                          route) => false);
                 },
                 child: Container(
-                  width: MediaQuery.of(context).size.width - 110,
+                  width: MediaQuery
+                      .of(context)
+                      .size
+                      .width - 110,
                   height: 50,
                   child: Card(
                     margin: EdgeInsets.all(0),
