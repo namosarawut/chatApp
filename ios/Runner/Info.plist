@@ -4,6 +4,8 @@
 <dict>
 <key>NSCameraUsageDescription</key>
 <string>Chat App ต้องการเข้าถึงกล้องของคุณ</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Chat App ต้องการเข้าถึงครังรูปภาพของคุณ</string>
 <key>NSMicrophoneUsageDescription</key>
 <string>Chat App ต้องการเข้าถึงไมค์ของคุณ</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -47,5 +49,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
 </dict>
 </plist>
